@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head lang="pt-br">
-    <meta charset="UTF-8" />
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minha página</title>
+    <title>My E-Commerce</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../FontAwesome/css/all.min.css" />
   </head>
   <body>
-    <header>
-      <h1>Minha primeira página</h1>
+    <header id="header">
+      <a href="#">
+        <img src="images/logo.png" class="logo" alt="logo" />
+      </a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contato.html">Fale Conosco</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <nav>
-      <li><a href="">Home</a></li>
-      <li><a href="">Sobre</a></li>
-      <li><a href="">Fale Conosco</a></li>
-    </nav>
-    <main>
-      <h1>Bem vindos a meu site!</h1>
+    <section id="hero">
+      <h4>Ofertas!</h4>
+      <h2>Grandes Descontos</h2>
+      <h1>Em todos os produtos!</h1>
+      <p>Aproveite agora mesmo!</p>
+      <button>Comprar Agora</button>
+    </section>
+    <section id="beneficios" class="section-padding">
+      <div class="bn-box">
+        <img src="images/features/f1.png" alt="" />
+        <h6>Frete Grátis</h6>
+      </div>
+      <div class="bn-box">
+        <img src="images/features/f2.png" alt="" />
+        <h6>Pedidos Online</h6>
+      </div>
+      <div class="bn-box">
+        <img src="images/features/f3.png" alt="" />
+        <h6>Poupe Dinheiro</h6>
+      </div>
+      <div class="bn-box">
+        <img src="images/features/f4.png" alt="" />
+        <h6>Promoções</h6>
+      </div>
+      <div class="bn-box">
+        <img src="images/features/f5.png" alt="" />
+        <h6>Vendas</h6>
+      </div>
+      <div class="bn-box">
+        <img src="images/features/f6.png" alt="" />
+        <h6>Suporte 24/7</h6>
+      </div>
+    </section>
 
-      <h2>Meu site</h2>
-      <p>Isso é um site simples</p>
-    </main>
-    <footer>
-      <p>Muito massa!</p>
-    </footer>
-    <script></script>
+    <script src="app.js"></script>
   </body>
 </html>
